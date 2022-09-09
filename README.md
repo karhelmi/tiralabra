@@ -1,4 +1,4 @@
-#Aineopintojen harjoitustyö: Tietorakenteet ja algoritmit (laboratoriotyöskentely), syksy 2022
+# Aineopintojen harjoitustyö: Tietorakenteet ja algoritmit (laboratoriotyöskentely), syksy 2022
 
 ## Ohjelmointikieli
 
@@ -29,7 +29,7 @@ Tulen myöhemmin arvioimaan aika- ja tilavaativuutta (O-merkintöjä).
 
 ## Lähteet
 
-* [kurssimateriaali](www.hs.fi)
+* [kurssimateriaali](https://tiralabra.github.io/2022_p1/index)
 
 ## Opinto-ohjelmani
 
