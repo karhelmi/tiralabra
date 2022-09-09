@@ -25,3 +25,9 @@ vielä tulevan projektin sisältöön.
 Tulevalla viikolla minun täytyy tutustua Markovin ketjuun, trie-tietorakenteeseen sekä MIDI-tiedostomuotoon tai vastaavaan, millä tavalla saisin musiikin sisään ja ulos ohjelmasta.
 Lisäksi pitää varmasti rakentaa ohjelmatiedostot ja asentaa niihin joitain perusasioita. Olisi varmasti itselleni hyödyllistä, jos voisin jutella ohjaajan kanssa tästä aiheesta ja 
 tässä mainitsemistani asioista sen jälkeen, kun olen itse ehtinyt hieman tutustua niihin.
+
+## Työaikakirjanpito
+
+| Pvm    | Tunnit| Tehdyt asiat |
+| :--:   |:-----:| :------|
+|9.9.2022|  3    | Aiheen valinta, Github-repositorion pystyttäminen, labtool, maarittelydokumentin laatiminen, viikkoraportin 1 kirjoittaminen |
