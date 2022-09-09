@@ -12,4 +12,4 @@ Määrittelydokumentissa olen määritellyt tuon sisältöä. Tämä kohta tulee
 * Käyttöohje (lisätään myöhemmin)
 
 ## Viikkoraportit
-* [Viikkoraportti 1](linkki)
+* [Viikkoraportti 1](https://github.com/karhelmi/tiralabra/blob/master/dokumentaatio/viikkoraportit/viikkoraportti_1.md)
