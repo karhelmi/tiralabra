@@ -2,7 +2,7 @@
 
 ## Ohjelmointikieli
 
-Ohjelmoin *Python*illa. Python on ainoa kieli, jonka tällä hetkellä hallitsen (vertaisarviointeja varten). 
+Ohjelmoin **Python**illa. Python on ainoa kieli, jonka tällä hetkellä hallitsen (vertaisarviointeja varten). 
 
 ## Aihe
 
