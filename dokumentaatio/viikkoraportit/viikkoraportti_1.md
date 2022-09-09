@@ -30,4 +30,4 @@ tässä mainitsemistani asioista sen jälkeen, kun olen itse ehtinyt hieman tutu
 
 | Pvm    | Tunnit| Tehdyt asiat |
 | :--:   |:-----:| :------|
-|9.9.2022|  3    | Aiheen valinta, Github-repositorion pystyttäminen, labtool, maarittelydokumentin laatiminen, viikkoraportin 1 kirjoittaminen |
+|9.9.2022|  3.5  | Aiheen valinta, Github-repositorion pystyttäminen, labtool, maarittelydokumentin laatiminen, viikkoraportin 1 kirjoittaminen |
