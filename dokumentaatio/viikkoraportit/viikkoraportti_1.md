@@ -8,7 +8,7 @@ Olin aloitusluennolla, jossa valitsemani aihe kuulosti kaikkein mielenkiintoisim
 ## Ohjelman edistyminen
 
 Ohjelma ei ole edennyt yhtään, sillä tässä oli vain kaksi päivää aikaa. Olen kuitenkin luonut repositorion githubiin ja yhteyden koneeni ja github-repositorion välille.
-Olen myös alkanut hahmotella repositorion rakennetta (katson mallia ohjelmistotekniikan repositoriostani) ja katsellut hieman perusasioita, mistä minun pitää aloittaa.
+Olen myös alkanut hahmotella repositorion rakennetta (katson mallia ohjelmistotekniikan repositoriostani) ja katsellut hieman perusasioita, mistä minun pitää aloittaa. Lisäsin kurssin sekä linkin repositoriooni myös labtooliin.
 
 ## Viikon opit
 
