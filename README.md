@@ -13,3 +13,4 @@ Määrittelydokumentissa olen määritellyt tuon sisältöä. Tämä kohta tulee
 
 ## Viikkoraportit
 * [Viikkoraportti 1](https://github.com/karhelmi/tiralabra/blob/master/dokumentaatio/viikkoraportit/viikkoraportti_1.md)
+* [Viikkoraportti 2](https://github.com/karhelmi/tiralabra/blob/master/dokumentaatio/viikkoraportit/viikkoraportti_2.md)
