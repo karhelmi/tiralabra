@@ -18,9 +18,9 @@ Määrittelydokumentissa olen määritellyt tuon sisältöä. Tämä kohta tulee
 
 
 ## Käyttöohjeet
-Siirry virtuaaliympäristöön: poetry shell
-Aja ohjelma: python3 src/index.py
-Aja testit: pytest src
-Kerää testikattavuus: coverage run --branch -m pytest src (coverage report -m nähdäksesi komentorivillä)
-Luo testikattavuusraportti: coverage html
-Katso koodin laatu: pylint src
+* Siirry virtuaaliympäristöön: poetry shell
+* Aja ohjelma: python3 src/index.py
+* Aja testit: pytest src
+* Kerää testikattavuus: coverage run --branch -m pytest src (coverage report -m nähdäksesi komentorivillä)
+* Luo testikattavuusraportti: coverage html
+* Katso koodin laatu: pylint src
