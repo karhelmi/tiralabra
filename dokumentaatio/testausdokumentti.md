@@ -2,7 +2,7 @@
 
 ## Testikattavuusraportti
 
-![](./kuvat/Coverage-raportti 20220923.png)
+![](./kuvat/Coverage-raportti20220923.png)
 
 ## Komennot
 
