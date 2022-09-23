@@ -1,2 +1,6 @@
 .pytest_cache
 __pycache__
+.coverage
+htmlcov
+src/tests/ngramit_test.py
+src/ngramit_old.py
