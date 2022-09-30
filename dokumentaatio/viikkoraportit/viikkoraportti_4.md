@@ -48,8 +48,7 @@ Rakennetta pitää parantaa ja testejä pitää tehdä.
 |21.9.2022|  4.0  | Trie-rakenteen pohtiminen ja musiikin konvertoinnin koodaus.
 |22.9.2022|  5.0  | "" , testien tekemistä ja uusien työkalujen käyttöönotto.
 |23.9.2022|  1.5  | Dokumenttien viimeistely ja viikon loppupalautuksen teko.
-|28.9.2022|  6.0  | Trien pyörittelyä ja yritystä päästä solmuihin käsiksi. En päässyt yhtään eteenpäin, kun en keksinyt, miten pääsen solmuihin käsiksi.
-                    Abc-notaatioon tutustuminen (turhaa).
+|28.9.2022|  6.0  | Trien pyörittelyä ja yritystä päästä solmuihin käsiksi. En päässyt yhtään eteenpäin, kun en keksinyt, miten pääsen solmuihin käsiksi. Abc-notaatioon tutustuminen (turhaa).
 |29.9.2022|  5.0  | Ohjaajan kanssa keskustelua. Ohjelman rakentamista ja jonkinnäköinen breakthrough. Sain ekaa kertaa luotua uutta musiikkia!
 |30.9.2022|  2.0  | Testien tekemistä, dokumenttien viimeistely ja viikon loppupalautuksen teko.
 |Yhteensä |  36.5 ||
