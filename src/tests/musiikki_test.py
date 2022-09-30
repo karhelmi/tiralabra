@@ -12,14 +12,18 @@ class TestMusiikki(unittest.TestCase):
     def setUp(self):
         pass
     
-   # def test_nuotit_luvuiksi_muutos_toimii(self):
-    #    numerolista = m.muuta_nuotit_luvuiksi()
+    def test_nuotit_luvuiksi_muutos_toimii(self):
+        nuottikirjaimet = ["c", "cis", "d", "dis", "e", "f"]
+        numerolista = m.muuta_nuotit_luvuiksi(nuottikirjaimet)
         
-     #   self.assertEqual(numerolista, 
-      #      [1, 3, 5, 6, 8, 10, 12, 1, 3])
+        self.assertEqual(numerolista, 
+            [1, 2, 3, 4, 5, 6])
 
     def test_n_pituinen_nuottijono_toimii(self):
-        nuottijonojen_lista = m.n_pituiset_nuottijonot(3)
+        nuotit_lukuina_lista = [1, 2, 3, 4, 5, 6]
+        n = 3
         
-        self.assertEqual(nuottijonojen_lista,
-            [[1, 3, 5], [3, 5, 6], [5, 6, 8], [6, 8, 10], [8, 10, 12], [10, 12, 1], [12, 1, 3]])
+        n_pituiset_nuottijonot = m.n_pituiset_nuottijonot(nuotit_lukuina_lista, n)
+
+        self.assertEqual(n_pituiset_nuottijonot,
+            [[1, 2, 3], [2, 3, 4], [3, 4, 5], [4, 5, 6]])

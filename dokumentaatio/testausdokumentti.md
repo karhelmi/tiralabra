@@ -2,7 +2,9 @@
 
 ## Testikattavuusraportti
 
-![](./kuvat/Coverage-raportti20220923.png)
+![](./kuvat/Coverage-raportti20220930.png)
+
+Täytyy jatkaa testien kirjoittamista ensi viikolla.
 
 ## Komennot
 

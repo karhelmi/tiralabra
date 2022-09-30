@@ -1,14 +1,8 @@
-#from trie import Trie
-
-#t = Trie()
-
 class Musiikki:
     """Musiikki tuodaan tämän luokan alle.
     """
 
-    def __init__(self):
-        self.n = 2
-        self.nuotit = ["c", "d", "e", "f", "g", "a", "h", "c", "d"]
+    def __init__(self):        
         self.muutoslista = {"c": 1,
             "cis": 2,
             "d": 3,
@@ -21,36 +15,43 @@ class Musiikki:
             "a": 10,
             "b": 11,
             "h": 12}
-        self.nuotit_numeroina_lista = []
+        self.nuotit_lukuina_lista = []
 
-    def muuta_nuotit_luvuiksi(self): #Tänne tulee nuotit argumenttina
-        for nuotti in self.nuotit:
-            print(self.nuotit)
-            print(self.nuotit_numeroina_lista)
+    def muuta_nuotit_luvuiksi(self, abc_nuotit: list): #Tänne tulee nuotit argumenttina
+        """Tämä metodi muuttaa nuotti(kirjaimet) luvuiksi.
+
+        Args:
+            abc_nuotit (list): Tällä hetkellä annetaan listana.
+
+        Returns:
+            list: Palauttaa listan, jossa nuotit on muunnettu numeroiksi.
+        """
+        for nuotti in abc_nuotit:
             if nuotti in self.muutoslista.keys():
-                self.nuotit_numeroina_lista.append(self.muutoslista[nuotti])
-                print(f"kasvaa: {self.nuotit_numeroina_lista}")
-        print(f"nuotit nroina: {self.nuotit_numeroina_lista}")
-        return self.nuotit_numeroina_lista
+                self.nuotit_lukuina_lista.append(self.muutoslista[nuotti])
+        return self.nuotit_lukuina_lista
 
-    def n_pituiset_nuottijonot(self, n):
+    def n_pituiset_nuottijonot(self, nuotit_lukuina_lista, n):
+        """Jaottelee nuottilistan luvut n-nuotin osajonoihin.
+
+        Args:
+            nuotit_lukuina_lista (list): Lista, jossa nuotit lukuina.
+            n (int): haluttu nuottien osajonojen pituus.
+
+        Returns:
+            list: Palauttaa listan, jossa annetun kappaleen kaikki n-pituiset osajonot listana.
+        """
         indeksi = 0
         kierros = 0
         nuottijono = []
         nuottijonojen_lista = []
-        self.nuotit_numeroina_lista = self.muuta_nuotit_luvuiksi()
-        #print(f"täällä {self.nuotit_numeroina_lista}")
-        for nuottinumero in self.nuotit_numeroina_lista:
-            while indeksi < n + kierros and indeksi < len(self.nuotit_numeroina_lista):
-                nuottijono.append(self.nuotit_numeroina_lista[indeksi])
+        for nuottinumero in nuotit_lukuina_lista:
+            while indeksi < n + kierros and indeksi < len(nuotit_lukuina_lista):
+                nuottijono.append(nuotit_lukuina_lista[indeksi])
                 indeksi += 1
-                #print(indeksi)
             if len(nuottijono) == n:
                 nuottijonojen_lista.append(nuottijono)
-                #print(nuottijono)
                 nuottijono = []
                 kierros += 1
                 indeksi = kierros
-                #print(f"Loppu {indeksi}")
-        print(nuottijonojen_lista)
         return nuottijonojen_lista

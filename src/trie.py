@@ -9,43 +9,54 @@ class Trie:
 
     def __init__(self):
         self.juuri = TrieSolmu("")
-
-
-    def lisaa_kaikki_nuottijonot(self):
-        """Hakee koko nuottijonojen listan ja lisää ne n-pituinen nuottijono
-           kerrallaan trie-rakenteeseen.
-        """
         
-        nuottijonojen_lista = m.n_pituiset_nuottijonot(3)
-        #print(f"nuottijonojen lista: {nuottijonojen_lista}")
-        for nuottijono in nuottijonojen_lista:
-            #print(f"lisää nuottijono {nuottijono}")
-            self.lisaa_nuottijono(nuottijono)
-
-    def lisaa_nuottijono(self, nuottijono):
-        """Lisätään n-pituinen nuottijono trie-tietorakenteeseen.
+    def lisaa_n_nuottijono_triehen(self, n_nuottijonojen_lista: list):
+        """Lisää n-pituisen nuottijonon trie-rakenteeseen.
 
         Args:
-            nuottijono (list): n-pituinen nuottijono
+            n_nuottijonojen_lista (list): Lista, jossa kaikki musiikkikappaleen n-pituiset nuottijonot.
         """
+        for nuottijono in n_nuottijonojen_lista:
+            solmu = self.juuri
 
+            for nuotti in nuottijono:
+                if nuotti in solmu.lapsisolmut:
+                    solmu.nuottijonon_frekvenssi += 1
+                    solmu = solmu.lapsisolmut[nuotti] #määrittää seuraavan solmun kyseiseksi nuotiksi
+                else:
+                    uusi_solmu = TrieSolmu(nuotti)
+                    solmu.lapsisolmut[nuotti] = uusi_solmu
+                    uusi_solmu.nuottijonon_frekvenssi += 1
+                    solmu = uusi_solmu
+                    
+            
+    def palauta_seuraajat(self, nuottijono: list):
+        """Metodi etsii annetun nuottijonon viimeisen nuotin lapsisolmut ja palauttaa ne.
+
+        Args:
+            nuottijono (list): nuottijonon n - 1 edellistä nuottia 
+
+        Returns:
+            list: Palauttaa listan mahdollisista seuraavista nuoteista/solmuista.
+        """
         solmu = self.juuri
+        seuraajat = []
+        seuraajat_frekvenssi = []
+
         for nuotti in nuottijono:
             if nuotti in solmu.lapsisolmut:
-                solmu = solmu.lapsisolmut[nuotti] #määrittää seuraavan solmun kyseiseksi nuotiksi
-                print(f"on jo: {solmu}")
+                solmu = solmu.lapsisolmut[nuotti]
             else:
-                uusi_solmu = TrieSolmu(nuotti)
-                solmu.lapsisolmut[nuotti] = uusi_solmu
-                print(f"solmun lapsisolmut: {solmu.lapsisolmut}")
-                solmu = uusi_solmu
-                #print(f"uusi_solmu: {solmu}")
+                return False
+        
+        for key in solmu.lapsisolmut:
+            seuraajat.append(key)
+        #print(f"seuraajat: {seuraajat}")
 
-        solmu.vika_nuotti = True
+        for nuotti in seuraajat:
+            seuraajat_frekvenssi.append(solmu.lapsisolmut[nuotti].palauta_frekvenssi())
+        #print(f"frekvenssi: {solmu.hae_frekvenssi()}")
+        
+        #print(f"frekvenssi: {seuraajat_frekvenssi}")
 
-        solmu.nuottijonon_frekvenssi += 1
-#        print(f"frekvenssi: {solmu.nuottijonon_frekvenssi}")
-#        print(f"nuotti: {solmu.nuotti}")
-#        print(f"lapsisolmut: {solmu.lapsisolmut}")
-#        print(f"vika_nuotti: {solmu.vika_nuotti}")
-        return solmu.lapsisolmut
+        return (seuraajat, seuraajat_frekvenssi)

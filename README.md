@@ -7,7 +7,7 @@ Määrittelydokumentissa olen määritellyt tuon sisältöä. Tämä kohta tulee
 ## Dokumentaatio
 
 * [Määrittelydokumentti](https://github.com/karhelmi/tiralabra/blob/master/dokumentaatio/maarittelydokumentti.md)
-* Toteutusdokumentti (lisätään myöhemmin)
+* [Toteutusdokumentti](https://github.com/karhelmi/tiralabra/blob/master/dokumentaatio/toteutusdokumentti.md)
 * [Testausdokumentti](https://github.com/karhelmi/tiralabra/blob/master/dokumentaatio/testausdokumentti.md)
 * Käyttöohje (lisätään myöhemmin)
 
@@ -15,7 +15,7 @@ Määrittelydokumentissa olen määritellyt tuon sisältöä. Tämä kohta tulee
 * [Viikkoraportti 1](https://github.com/karhelmi/tiralabra/blob/master/dokumentaatio/viikkoraportit/viikkoraportti_1.md)
 * [Viikkoraportti 2](https://github.com/karhelmi/tiralabra/blob/master/dokumentaatio/viikkoraportit/viikkoraportti_2.md)
 * [Viikkoraportti 3](https://github.com/karhelmi/tiralabra/blob/master/dokumentaatio/viikkoraportit/viikkoraportti_3.md)
-
+* [Viikkoraportti 4](https://github.com/karhelmi/tiralabra/blob/master/dokumentaatio/viikkoraportit/viikkoraportti_4.md)
 
 ## Käyttöohjeet
 * Siirry virtuaaliympäristöön: poetry shell

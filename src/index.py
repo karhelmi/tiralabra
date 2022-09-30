@@ -1,19 +1,18 @@
 from trie import Trie
 from musiikki import Musiikki
+from arpa import Arpa
 
 t = Trie()
 m = Musiikki()
+a = Arpa()
 
 def main():
-    #t.muodosta_ngramit()
-    #t.luo_frekvenssi_lista()
-    #t.luo_tn_lista()
-    #m.muuta_nuotit_luvuiksi()
-    #t.lisaa_nuottijono("abcabcabc")
-    #m.muuta_nuotit_luvuiksi()
-    #m.n_pituiset_nuottijonot(3)
-    t.lisaa_kaikki_nuottijonot()
-    print(t)
+    #abc_nuotit = ["c", "d", "e", "f", "g", "a", "h", "c", "d"]
+    abc_nuotit = ["c", "d", "e", "c", "e", "d", "c", "d", "e", "c", "d", "e"]
+    n = 3
+    #m.muuta_nuotit_luvuiksi(abc_nuotit)
+    a.luo_uutta(abc_nuotit, n)
+    #t.palauta_seuraajat([1,3])
 
 if __name__ == "__main__":
     main()
