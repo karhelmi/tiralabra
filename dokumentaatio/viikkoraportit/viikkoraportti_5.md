@@ -53,9 +53,7 @@ Tämän jälkeen katson rakennetta ja teen testejä.
 |28.9.2022|  6.0  | Trien pyörittelyä ja yritystä päästä solmuihin käsiksi. En päässyt yhtään eteenpäin, kun en keksinyt, miten pääsen solmuihin käsiksi. Abc-notaatioon tutustuminen (turhaa).
 |29.9.2022|  5.0  | Ohjaajan kanssa keskustelua. Ohjelman rakentamista ja jonkinnäköinen breakthrough. Sain ekaa kertaa luotua uutta musiikkia!
 |30.9.2022|  2.0  | Testien tekemistä, dokumenttien viimeistely ja viikon loppupalautuksen teko.
-|6.9.2022 |  6.0  | Lisäsin funktion, joka tuo kappaleen tekstitiedostosta (johon joudun manuaalisesti
-vielä laittamana nuotit). Lisäsin myös funktion, joka muuntaa nuotit takaisin kirjaimiksi. Testasin
-muutamia abc-nuotteja ohjelmalla ja kuuntelin tuotoksen, ja tuntui toimivan!
+|6.9.2022 |  6.0  | Lisäsin funktion, joka tuo kappaleen tekstitiedostosta (johon joudun manuaalisesti vielä laittamana nuotit). Lisäsin myös funktion, joka muuntaa nuotit takaisin kirjaimiksi. Testasin muutamia abc-nuotteja ohjelmalla ja kuuntelin tuotoksen, ja tuntui toimivan!
 |7.9.2022 |  1.0  | Totesin, että ohjelma ei löydä .txt-tiedosta enää. En tiedä, mikä on yön aikana muuttunut.
 |8.9.2022 |  2.0  | Invoken lisääminen. Errorin ratkaisu. Viikkoraportin laatiminen ja loppupalautuksen teko.
 |Yhteensä |  46.0 ||
