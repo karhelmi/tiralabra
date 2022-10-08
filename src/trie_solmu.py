@@ -1,7 +1,7 @@
 class TrieSolmu:
     """Solmu trie-tietorakenteessa.
     """
-    
+
     def __init__(self, nuotti):
         """Liittää solmuun lähtötiedot.
 

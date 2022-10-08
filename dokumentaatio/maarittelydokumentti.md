@@ -29,7 +29,11 @@ Tulen myöhemmin arvioimaan aika- ja tilavaativuutta (O-merkintöjä).
 
 ## Lähteet
 
-* [kurssimateriaali](https://tiralabra.github.io/2022_p1/index)
+* [Kurssimateriaali](https://tiralabra.github.io/2022_p1/index)
+* [Sivusto abc-notaation kuunteluun](https://colinhume.com/Music.aspx)
+* [Perustietoa abc-notaatiosta](https://thecelticroom.org/abc-music-notation/abc-notation-read-and-write.html)
+* [Musiikkia abc-notaationa](https://abcnotation.com/)
+* [Trien rakentaminen Pythonilla](https://albertauyeung.github.io/2020/06/15/python-trie.html/)
 
 ## Opinto-ohjelmani
 

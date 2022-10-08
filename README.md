@@ -16,11 +16,16 @@ Määrittelydokumentissa olen määritellyt tuon sisältöä. Tämä kohta tulee
 * [Viikkoraportti 2](https://github.com/karhelmi/tiralabra/blob/master/dokumentaatio/viikkoraportit/viikkoraportti_2.md)
 * [Viikkoraportti 3](https://github.com/karhelmi/tiralabra/blob/master/dokumentaatio/viikkoraportit/viikkoraportti_3.md)
 * [Viikkoraportti 4](https://github.com/karhelmi/tiralabra/blob/master/dokumentaatio/viikkoraportit/viikkoraportti_4.md)
+* [Viikkoraportti 5](https://github.com/karhelmi/tiralabra/blob/master/dokumentaatio/viikkoraportit/viikkoraportti_5.md)
 
 ## Käyttöohjeet
-* Siirry virtuaaliympäristöön: poetry shell
-* Aja ohjelma: python3 src/index.py
-* Aja testit: pytest src
-* Kerää testikattavuus: coverage run --branch -m pytest src (coverage report -m nähdäksesi komentorivillä)
-* Luo testikattavuusraportti: coverage html
-* Katso koodin laatu: pylint src
+Mene kloonaamasi koodin juurihakemistoon "tiralabra" komentoriviltäsi ja suorita siellä seuraavat 
+komennot:
+* poetry install (asentaa projektin riippuvuudet)
+
+Invoke työkalu on otettu käyttöön, joten voit suorittaa ohjelmaa seuraavilla komennoilla:
+* **poetry run invoke start**: suorittaa ohjelman
+* **poetry run invoke test**: suorittaa koodin automaattiset testit
+* **poetry run invoke coverage**: kerää testikattavuuden
+* **poetry run invoke coverage-report**: luo testikattavuusraportin tiedostoon index.html htmlcov-kansioon
+* **poetry run invoke lint**: suorittaa koodin laadun staattisen analyysin

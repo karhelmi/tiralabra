@@ -1,0 +1,63 @@
+X:1
+T:Main Title
+T:Secondary title or alternative names
+C:Composer
+O:Yorkshire
+M:4/4
+Q:160
+L:1/8
+R:Reel
+K:C
+|A,B,CD EFGA|Bcde fgab|c'd'e'f' g'a'b'|
+
+A, B, C D E F G A B c d e f g a b c' d' e' f' g' a' b'
+
+Source: https://thecelticroom.org/abc-music-notation/abc-notation-read-and-write.html
+
+
+
+X:1
+T:Main Title
+T:Secondary title or alternative names
+C:Composer
+O:Yorkshire
+M:4/4
+Q:160
+L:1/8
+R:Reel
+K:C
+|FG|ABcd|efga|b'c'd'e'|f'g'a'b'|
+
+
+
+X:6632
+T:Gweebarra Bridge Reel
+T:Killarney Boys of Pleasure
+R:Reel
+S:
+H:
+N:
+D:
+Z:Adrian Scahill
+M:2/2
+L:1/8
+K:C
+dAdc ddAd|cdcd dAdc|ddAd dAdc|edcA GECD|
+EGAA AGEE|DDDC Adcd|dAdd ceed|eeee edee|dcdd Addc|dcee eeed|eeed eeed|eeed cAGE|EDDC|
+
+D3C DEFG|A2GE CDEG|A3c dced|cAGE EDDC:||\
+Addc d2Ad|cAGE CDEG|ceed e3d|cAGE EDDG:||\
+D D D C D E F G A A G E C D E G A A A c d c e d c A G E E D D C A d d c d d A d
+c A G E C D E G c e e d e e e d c A G E E D D G
+
+
+
+X:2
+T:Love Will You Marry Me?
+M:C|
+K:G
+|DDDD DEGE|EGDD DDDD|DEGE EEGD|DDDD DEGA|BBCG EEGA|BBCG EEEE|EEEG DDEG|ABcD dedB|GGGG|
+
+|:"G"D2DE GAB2|"C"GE E2 GE E2|"G"D2DE GABc|"D"dedB A2 "G"G2:||
+G D D D E G A B B C G E E E G E E E G D D D E G A B c D d e d B A2 G G2
+
