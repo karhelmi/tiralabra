@@ -21,7 +21,7 @@ Määrittelydokumentissa olen määritellyt tuon sisältöä. Tämä kohta tulee
 ## Käyttöohjeet
 Mene kloonaamasi koodin juurihakemistoon "tiralabra" komentoriviltäsi ja suorita siellä seuraavat 
 komennot:
-* poetry install (asentaa projektin riippuvuudet)
+* **poetry install** (asentaa projektin riippuvuudet)
 
 Invoke työkalu on otettu käyttöön, joten voit suorittaa ohjelmaa seuraavilla komennoilla:
 * **poetry run invoke start**: suorittaa ohjelman
