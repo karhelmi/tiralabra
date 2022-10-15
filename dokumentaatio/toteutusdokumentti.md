@@ -9,7 +9,8 @@ Ohjelmassa on neljä luokkaa:
 * arpa
 
 Alla olevassa kuvassa on esitetty ohjelman rakenne luokkakaaviona mukaan lukien luokkien metodit.
-![](.kuvat/rakennekaavio.jpg)
+
+![](./kuvat/rakennekaavio.jpg)
 
 ## Aika- ja tilavaativuudet
 
@@ -31,4 +32,4 @@ muuttaa haettavan tiedoston nimeä koodissa.
 * Voisi tutkia, onko aikavaativuutta mahdollisuus parantaa.
 
 ## Lähteet
-* [luokkakaavio](yuml.me)
+* [Yuml-työkalu](https://www.yuml.me)
