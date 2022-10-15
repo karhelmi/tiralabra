@@ -17,6 +17,7 @@ Määrittelydokumentissa olen määritellyt tuon sisältöä. Tämä kohta tulee
 * [Viikkoraportti 3](https://github.com/karhelmi/tiralabra/blob/master/dokumentaatio/viikkoraportit/viikkoraportti_3.md)
 * [Viikkoraportti 4](https://github.com/karhelmi/tiralabra/blob/master/dokumentaatio/viikkoraportit/viikkoraportti_4.md)
 * [Viikkoraportti 5](https://github.com/karhelmi/tiralabra/blob/master/dokumentaatio/viikkoraportit/viikkoraportti_5.md)
+* [Viikkoraportti 6](https://github.com/karhelmi/tiralabra/blob/master/dokumentaatio/viikkoraportit/viikkoraportti_6.md)
 
 ## Käyttöohjeet
 Mene kloonaamasi koodin juurihakemistoon "tiralabra" komentoriviltäsi ja suorita siellä seuraavat 
