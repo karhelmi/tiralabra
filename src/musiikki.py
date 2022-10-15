@@ -1,7 +1,3 @@
-import json
-import os
-
-
 class Musiikki:
     """Musiikki tuodaan tämän luokan alle.
     """
@@ -49,40 +45,30 @@ class Musiikki:
         self.nuotit_lukuina_lista = []
         self.uusi_musiikki_nuotteina = []
 
-    # Tänne tulee nuotit argumenttina
-    def muuta_nuotit_luvuiksi(self, abc_nuotit: list):
-        """Tämä metodi muuttaa nuotti(kirjaimet) luvuiksi.
+    def muuta_nuotit_n_pituisiksi_lukujonoiksi(self, abc_nuotit: list, n: int):
+        """Tämä metodi muuttaa nuotti(kirjaimet) luvuiksi sekä jaottelee ne n-kappaleen
+            osajonoihin.
 
         Args:
-            abc_nuotit (list): Tällä hetkellä annetaan listana.
+            abc_nuotit (list): Abc-nuottikirjaimet listana.
+            n (int): Haluttu osajonon pituus.
 
         Returns:
-            list: Palauttaa listan, jossa nuotit on muunnettu numeroiksi.
+            list: Palauttaa alkuperäisestä kappaleesta muodostetun
+                n-pituisista lukujonoista muodostuvan listan.
         """
         for nuotti in abc_nuotit:
-            if nuotti in self.muutoslista.keys():
+            if nuotti in self.muutoslista:
                 self.nuotit_lukuina_lista.append(self.muutoslista[nuotti])
             else:
                 continue
-        return self.nuotit_lukuina_lista
-
-    def n_pituiset_nuottijonot(self, nuotit_lukuina_lista, n):
-        """Jaottelee nuottilistan luvut n-nuotin osajonoihin.
-
-        Args:
-            nuotit_lukuina_lista (list): Lista, jossa nuotit lukuina.
-            n (int): haluttu nuottien osajonojen pituus.
-
-        Returns:
-            list: Palauttaa listan, jossa annetun kappaleen kaikki n-pituiset osajonot listana.
-        """
         indeksi = 0
         kierros = 0
         nuottijono = []
         nuottijonojen_lista = []
-        for nuottinumero in nuotit_lukuina_lista:
-            while indeksi < n + kierros and indeksi < len(nuotit_lukuina_lista):
-                nuottijono.append(nuotit_lukuina_lista[indeksi])
+        for nuottinumero in self.nuotit_lukuina_lista:
+            while indeksi < n + kierros and indeksi < len(self.nuotit_lukuina_lista):
+                nuottijono.append(self.nuotit_lukuina_lista[indeksi])
                 indeksi += 1
             if len(nuottijono) == n:
                 nuottijonojen_lista.append(nuottijono)
@@ -102,11 +88,6 @@ class Musiikki:
         """
         for luku in uusi_musiikki:
             for key, value in self.muutoslista.items():
-                #print(f"key: {key}")
-                #print(f"value: {value}")
-                #print(f"luku: {luku}")
-                #print(f"muutoslista_key: {key}")
                 if luku == value:
                     self.uusi_musiikki_nuotteina.append(key)
-        #print(f"uusi_musa_nuotteina?: {self.uusi_musiikki_nuotteina}")
         return self.uusi_musiikki_nuotteina

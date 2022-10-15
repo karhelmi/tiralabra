@@ -2,5 +2,5 @@
 __pycache__
 .coverage
 htmlcov
-src/tests/ngramit_test.py
-src/ngramit_old.py
+musiikki_kipale_copy.txt
+src/index_copy.py

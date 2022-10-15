@@ -1,8 +1,4 @@
 from trie_solmu import TrieSolmu
-from musiikki import Musiikki
-
-m = Musiikki()
-
 
 class Trie:
     """Luokka trie-tietorakenteelle.
@@ -11,11 +7,12 @@ class Trie:
     def __init__(self):
         self.juuri = TrieSolmu("")
 
-    def lisaa_n_nuottijono_triehen(self, n_nuottijonojen_lista: list):
+    def lisaa_n_nuottijonot_triehen(self, n_nuottijonojen_lista: list):
         """Lisää n-pituisen nuottijonon trie-rakenteeseen.
 
         Args:
-            n_nuottijonojen_lista (list): Lista, jossa kaikki musiikkikappaleen n-pituiset nuottijonot.
+            n_nuottijonojen_lista (list): Lista, jossa kaikki
+            musiikkikappaleen n-pituiset nuottijonot.
         """
         for nuottijono in n_nuottijonojen_lista:
             solmu = self.juuri
@@ -35,7 +32,7 @@ class Trie:
         """Metodi etsii annetun nuottijonon viimeisen nuotin lapsisolmut ja palauttaa ne.
 
         Args:
-            nuottijono (list): nuottijonon n - 1 edellistä nuottia 
+            nuottijono (list): nuottijonon n - 1 edellistä nuottia
 
         Returns:
             list: Palauttaa listan mahdollisista seuraavista nuoteista/solmuista.

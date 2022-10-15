@@ -19,6 +19,4 @@ class TrieSolmu:
             int: nuottijonon frekvenssi
         """
         return self.nuottijonon_frekvenssi
-
- #   def __str__(self):
-#        return (self.nuotti, self.nuottijonon_frekvenssi, self.vika_nuotti)
+        

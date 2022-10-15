@@ -6,26 +6,25 @@ Ohjelmoin **Python**illa. Python on ainoa kieli, jonka tällä hetkellä hallits
 
 ## Aihe
 
-Alustava suunnitelmani aiheesta on koneoppimiseen liittyvä laskennallinen luovuus. Tavoitteeni on 
-rakentaa ohjelma, joka annetun nuottijonon (kappaleen) perusteella luo tiettyyn algoritmiin perustuen uutta musiikkia.
-Parasta olisi, jos saisin kuulla ohjelmani luomaa musiikkia Säkkijärven polkan perusteella.
+Aiheeni on koneoppimiseen liittyvä laskennallinen luovuus. Olen rakentanut ohjelman, 
+joka annetun nuottijonon (musiikkikappaleen) perusteella luo tiettyyn algoritmiin perustuen 
+uutta musiikkia.
 
 ## Algoritmit ja tietorakenteet
 
-Ei ole taustatietoa vielä tarkemmin, miten tämän toteutan. Kurssimateriaalin perusteella 
-tulen tarvitsemaan Markovin ketjua ja lisäksi minun tulee toteuttaa itse trie-tietorakenne. Nämä eivät
-ole erityisen tuttuja minulle ennestään, joten minun täytyy ensin tutustua aiheisiin.
-
-Mainitsen nämä algoritmit ja tietorakenteet, koska kurssimateriaalissa vinkattiin niiden soveltuvan tähän työhön.
-Tarvitsen algoritmin käymään läpi nuottien kolmikkoja ja näiden perusteella ennustaa ja rakentaa uutta.
-
-Ohjelma saa syötteinä nuotteja. Pohdin, että miten saan musiikkia sisään ohjelmaan. Kurssimateriaalissa mainittiin jotain esim. MIDI-tiedostoista,
-mutta tämä ei ole vielä minulle tuttua. Pohdin siis vielä, että onko jokin tapa, miten voisi laittaa musiikkia sisään muuten kuin kirjoittamalla kirjaimia ja
-voisi kuulla oikeaa musiikkia. Toivoisin, etten tule ainoastaan käsittelemään (nuotti)kirjainsarjoja, joka pitää itse soittaa kuullakseen sen.
+Ohjelmassa käytetty algoritmi perustuu Markovin ketjuun. Ohjelmassa voi määrittää muuttujan (n),
+kuinka monen nuotin perusteella uutta musiikkia luodaan. Uusi musiikkikappale luodaan 
+Markovin ketjun ja mainitun muuttujan perusteella eli alkuperäisen kappaleen n-pituisten nuottijonoihin
+perustuen luodaan uutta musiikkia n-pituinen nuottijono kerrallaan (arpomalla). Tässä
+käytetään hyväksi trie-tietorakennetta. Trie:n juurisolmusta lähtee n-pituiset nuottijonot
+lapsisolmujen suuntaan. Jokainen solmu pitää kirjaa nuotista, nuottijonon frekvenssistä sekä solmun
+lapsisolmuista.
 
 ## Aika- ja tilavaativuus
 
-Tulen myöhemmin arvioimaan aika- ja tilavaativuutta (O-merkintöjä).
+Algoritmi, joka lisää nuottijonot trie:hen määrittää aikavaativuuden. Aikavaativuus on
+n-pituisten nuottijonojen määrä kerrottuna yhden nuottijonon nuottien määrällä. Aikavaativuus on
+täten noin O('nuottien_lukumäärä'*n). Jos 'nuottien_lukumäärä = m, niin aikavaativuus on O(mn).
 
 ## Lähteet
 

@@ -9,7 +9,7 @@ Määrittelydokumentissa olen määritellyt tuon sisältöä. Tämä kohta tulee
 * [Määrittelydokumentti](https://github.com/karhelmi/tiralabra/blob/master/dokumentaatio/maarittelydokumentti.md)
 * [Toteutusdokumentti](https://github.com/karhelmi/tiralabra/blob/master/dokumentaatio/toteutusdokumentti.md)
 * [Testausdokumentti](https://github.com/karhelmi/tiralabra/blob/master/dokumentaatio/testausdokumentti.md)
-* Käyttöohje (lisätään myöhemmin)
+* [Käyttöohje](https://github.com/karhelmi/tiralabra/blob/master/dokumentaatio/kayttoohje.md)
 
 ## Viikkoraportit
 * [Viikkoraportti 1](https://github.com/karhelmi/tiralabra/blob/master/dokumentaatio/viikkoraportit/viikkoraportti_1.md)

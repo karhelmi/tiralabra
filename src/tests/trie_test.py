@@ -1,5 +1,6 @@
 import unittest
 from trie import Trie
+from trie_solmu import TrieSolmu
 
 t = Trie()
 
@@ -11,11 +12,13 @@ t = Trie()
 
 class TestTrie(unittest.TestCase):
     def setUp(self):
-        pass
+        self.testi_solmu = TrieSolmu("")
 
-    # def test_nuottijonon_lisäys_triehen_toimii(self):
-     #   nuottijonojen_lista = [[1,3,5], [3,5,6],[5,6,8]]
-      #  t.lisaa_kaikki_nuottijonot()
+    def test_nuottijonon_lisäys_triehen_toimii(self):
+        nuottijonojen_lista = [[1,3,5], [1,4,5],[1,6,8]]
+        ykkosen_lapsisolmut = []
+        t.lisaa_n_nuottijonot_triehen(nuottijonojen_lista)
+        self.testi_solmu[0].palauta_lapsisolmut()
 
-      #  self.assertEqual(nuottijonojen_lista,
-       #     [[1, 3, 5], [3, 5, 6], [5, 6, 8], [6, 8, 10], [8, 10, 12], [10, 12, 1], [12, 1, 3]])
+        self.assertEqual(ykkosen_lapsisolmut,
+            [3,4,6])
