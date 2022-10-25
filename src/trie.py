@@ -20,8 +20,7 @@ class Trie:
             for nuotti in nuottijono:
                 if nuotti in solmu.lapsisolmut:
                     solmu.nuottijonon_frekvenssi += 1
-                    # määrittää seuraavan solmun kyseiseksi nuotiksi
-                    solmu = solmu.lapsisolmut[nuotti]
+                    solmu = solmu.lapsisolmut[nuotti] #Määrittää seuraavan solmun kyseiseksi nuotiksi
                 else:
                     uusi_solmu = TrieSolmu(nuotti)
                     solmu.lapsisolmut[nuotti] = uusi_solmu
@@ -49,13 +48,9 @@ class Trie:
 
         for key in solmu.lapsisolmut:
             seuraajat.append(key)
-        #print(f"seuraajat: {seuraajat}")
 
         for nuotti in seuraajat:
             seuraajat_frekvenssi.append(
                 solmu.lapsisolmut[nuotti].palauta_frekvenssi())
-        #print(f"frekvenssi: {solmu.hae_frekvenssi()}")
-
-        #print(f"frekvenssi: {seuraajat_frekvenssi}")
 
         return (seuraajat, seuraajat_frekvenssi)

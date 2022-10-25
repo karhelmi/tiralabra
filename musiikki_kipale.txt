@@ -1,2 +1,11 @@
-D D D C D E F G A A G E C D E G A A A c d c e d c A G E E D D C A d d c d d A d
-c A G E C D E G c e e d e e e d c A G E E D D G
+X:511
+T:Set 11 - Hornpipes
+S:thecelticroom.org
+M:4/4
+L:1/8
+R:hornpipe
+K:Dmaj
+AF | D2FA DAFA | dfed  B2dB | A2AB  AFDE | FD ED B,DA,B,|
+| D2FA DAFA | dfed B2dB | A2AB AFDE | F2D2 D2:||
+dB | Addc defg | afbf afed | efed Bcde | fded BdA2 |
+| Addc defg | afbf afed | efed BcdB | AFEF  D2:||

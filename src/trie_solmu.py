@@ -19,4 +19,6 @@ class TrieSolmu:
             int: nuottijonon frekvenssi
         """
         return self.nuottijonon_frekvenssi
-        
+
+    #def palauta_lapsisolmut(self):
+    #    return self.lapsisolmut

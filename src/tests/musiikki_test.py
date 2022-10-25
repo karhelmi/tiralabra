@@ -3,12 +3,6 @@ from musiikki import Musiikki
 
 m = Musiikki()
 
-# Aja testit terminaalissa (juurihakemistossa): "pytest src"
-# Kerää testikattavuus: "coverage run --branch -m pytest src" JA raportti komentoriville: coverage report -m
-# Ja visuaalinen testikattavuusraportti: coverage html
-# Kaikissa src:n alahakemistoissa tulee olla __init__.py -tiedosto Coveragen vuoksi.
-
-
 class TestMusiikki(unittest.TestCase):
     def setUp(self):
         pass
