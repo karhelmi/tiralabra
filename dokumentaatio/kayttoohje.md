@@ -14,7 +14,7 @@ Invoke työkalu on otettu käyttöön, joten voit suorittaa ohjelmaa seuraavilla
 
 ## Alkuperäinen musiikki
 
-Alkuperäinen musiikki kopioidaan ohjelman tiedostoon "musiikki_kipale.txt" abc-muotoisena.
+Alkuperäinen musiikki kopioidaan ohjelman tiedostoon **"musiikki_kipale.txt"** abc-muotoisena.
 Lähteitä abc-musiikille ovat esimerkiksi:
 * [The Celtic Room](https://thecelticroom.org/tune-library.html)
 * [abcnotation.com](https://abcnotation.com)
@@ -22,15 +22,14 @@ Lähteitä abc-musiikille ovat esimerkiksi:
 1. Valitse haluamasi kappale. Voit myös kuunnella, miltä se kuulostaa.
 2. Avaa sen abc-notaatio.
 3. Kopioi ja liitä teksti yllä mainittuun tiedostoon. (Jos abc-notaatio on esitetty useammalle sävellajille
-[kuten Celtic Roomissa usein on], valitse niistä vain yksi kopioitavaksi eli kopioi vain yksi
-ryhmittymä nuotteja.
+[kuten Celtic Roomissa usein on], kopioi niistä vain yksi.)
 4. Tallenna tiedosto.
 
 ## Uusi musiikki
 
 Suorita ohjelma yllä mainitun komennon avulla. Suoritettuasi ohjelman,
-uusi luotu musiikki tulee tiedostoon "uusi_musiikki.txt". Uusi luotu musiikki muuttuu joka kerta,
-kun suoritat ohjelman (uudelleen).
+uusi luotu musiikki tulee tiedostoon **"uusi_musiikki.txt"**. Uusi luotu musiikki muuttuu joka kerta,
+kun suoritat ohjelman.
 
 1. Kopioi tiedoston sisältämä teksti kokonaisuudessaan.
 2. Siirry [tälle sivustolle](https://colinhume.com/Music.aspx), ja liitä
