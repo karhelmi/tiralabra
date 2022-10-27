@@ -16,8 +16,7 @@ Alla olevassa kuvassa on esitetty ohjelman rakenne luokkakaaviona mukaan lukien 
 
 Algoritmi, joka lisää nuottijonot triehen määrittää aikavaativuuden. Aikavaativuus on n-pituisten
 nuottijonojen määrä kerrottuna yhden nuottijonon nuottien määrällä. Aikavaativuus on täten noin
-O('nuottien_lukumäärä'*n). Jos 'nuottien_lukumäärä'=m, niin aikavaativuus on O(mn).
-atio/maarittelydokumentti.md). Ole hyvä ja katso sieltä.
+O('nuottijonojen_lukumäärä'*n). Jos 'nuottijonojen_lukumäärä'=m, niin aikavaativuus on O(mn).
 
 Tilavaativuutta en ole arvioinut.
 
