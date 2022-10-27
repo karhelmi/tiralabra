@@ -1,10 +1,10 @@
-# Aineopintojen harjoitustyö: Tietorakenteet ja algoritmit (laboratoriotyöskentely), syksy 2022
+# Aineopintojen harjoitustyö: Tietorakenteet ja algoritmit (laboratoriotyöskentely), syksy 2022 (periodi 1)
 
 ## Lyhyesti
 
-Olen rakentanut kurssille ohjelman, joka luo annetusta musiikkikappaleesta uutta musiikkia seuraten annetun musiikkikappaleen määritetynpituisia sävelkulkuja satunnaisesti. Ohjelmassa on hyödynnetty trie-tietorakennetta nuottiliitynnäisten tietojen tallentamiseen sekä Markovin ketjua uuden musiikin luomiseen.
+Olen rakentanut kurssille ohjelman, joka luo annetusta musiikkikappaleesta uutta musiikkia seuraten annetun musiikkikappaleen määritetynpituisia sävelkulkuja satunnaisesti. Ohjelmassa on hyödynnetty **trie-tietorakenne**tta nuottiliitynnäisten tietojen tallentamiseen sekä **Markovin ketju**a uuden musiikin luomiseen. Musiikki tuodaan ohjelmaan **abc**-muodossa ja ohjelma tuottaa uuden musiikin samassa muodossa.
 
-Seuraavassa kohdassa on ('Dokumentaatio') on linkit dokumentteihin, jotka kertovat rakennetusta ohjelmasta tarkemmin. Käyttöohjeen avulla ohjelmaa voi itse suorittaa.
+Seuraavassa kohdassa ('Dokumentaatio') on linkit dokumentteihin, jotka kuvaavat rakennettua ohjelmaa tarkemmin. Käyttöohjeen avulla ohjelmaa pystyy itse suorittamaan.
 
 ## Dokumentaatio
 
