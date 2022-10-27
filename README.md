@@ -1,8 +1,10 @@
 # Aineopintojen harjoitustyö: Tietorakenteet ja algoritmit (laboratoriotyöskentely), syksy 2022
 
-## Työn laajuus
+## Lyhyesti
 
-Määrittelydokumentissa olen määritellyt tuon sisältöä. Tämä kohta tulee tarkentumaan myöhemmin.
+Olen rakentanut kurssille ohjelman, joka luo annetusta musiikkikappaleesta uutta musiikkia seuraten annetun musiikkikappaleen määritetynpituisia sävelkulkuja satunnaisesti. Ohjelmassa on hyödynnetty trie-tietorakennetta nuottiliitynnäisten tietojen tallentamiseen sekä Markovin ketjua uuden musiikin luomiseen.
+
+Seuraavassa kohdassa on ('Dokumentaatio') on linkit dokumentteihin, jotka kertovat rakennetusta ohjelmasta tarkemmin. Käyttöohjeen avulla ohjelmaa voi itse suorittaa.
 
 ## Dokumentaatio
 
@@ -18,15 +20,3 @@ Määrittelydokumentissa olen määritellyt tuon sisältöä. Tämä kohta tulee
 * [Viikkoraportti 4](https://github.com/karhelmi/tiralabra/blob/master/dokumentaatio/viikkoraportit/viikkoraportti_4.md)
 * [Viikkoraportti 5](https://github.com/karhelmi/tiralabra/blob/master/dokumentaatio/viikkoraportit/viikkoraportti_5.md)
 * [Viikkoraportti 6](https://github.com/karhelmi/tiralabra/blob/master/dokumentaatio/viikkoraportit/viikkoraportti_6.md)
-
-## Käyttöohjeet
-Mene kloonaamasi koodin juurihakemistoon "tiralabra" komentoriviltäsi ja suorita siellä seuraavat 
-komennot:
-* **poetry install** (asentaa projektin riippuvuudet)
-
-Invoke työkalu on otettu käyttöön, joten voit suorittaa ohjelmaa seuraavilla komennoilla:
-* **poetry run invoke start**: suorittaa ohjelman
-* **poetry run invoke test**: suorittaa koodin automaattiset testit
-* **poetry run invoke coverage**: kerää testikattavuuden
-* **poetry run invoke coverage-report**: luo testikattavuusraportin tiedostoon index.html htmlcov-kansioon
-* **poetry run invoke lint**: suorittaa koodin laadun staattisen analyysin
