@@ -2,12 +2,15 @@
 
 ## Testikattavuusraportti
 
-![](./kuvat/Coverage-raportti20220930.png)
+![](./kuvat/Coverage-raportti20221027.png)
 
-Täytyy jatkaa testien kirjoittamista ensi viikolla.
+Trielle en onnistunut tehdä testiä. Testikattavuusraportissa näyttää kuin trietäkin olisi testattu, koska
+onnistun sinne lisäämään solmuja. Sain ulos vain olion. Sen sijaan arpaluokkaa ja musiikkiluokkaa
+on testattu kattavasti: luotu musiikkikappale on toivotunmittainen, on muutettu
+nuottikirjainlistaa lukuosajonoiksi, ja nuottilukuja kirjainnuoteiksi.
 
 ## Komennot
 
-* coverage run --branch -m pytest src (testikattavuuden keräys)
-* coverage report -m (testikattavuuden raportti komentoriville)
-* coverage html (testikattavuuden raportti html-tiedostona)
+Testauksen komennot on kerrottu [käyttöohjeissa](https://github.com/karhelmi/tiralabra/blob/master/dokumentaatio/kayttoohje.md).
+Testit voidaan toistaa kuinka monta kertaa tahansa, ja tulokset ovat samat, koska olen antanut
+lähtötiedot.

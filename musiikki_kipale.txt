@@ -1,11 +1,9 @@
-X:511
-T:Set 11 - Hornpipes
-S:thecelticroom.org
-M:4/4
-L:1/8
-R:hornpipe
-K:Dmaj
-AF | D2FA DAFA | dfed  B2dB | A2AB  AFDE | FD ED B,DA,B,|
-| D2FA DAFA | dfed B2dB | A2AB AFDE | F2D2 D2:||
-dB | Addc defg | afbf afed | efed Bcde | fded BdA2 |
-| Addc defg | afbf afed | efed BcdB | AFEF  D2:||
+X:513
+T:Set 13 - Jigs
+M:6/8
+R:Jig
+K:Gmaj
+A|: BAG EGD | EGD EGA | BAG EGD | EAA AGA |
+BAG EGD | EGD EGA | BAG EGD |1 EGG G2A :|2 EGG G2D ||
+|: GBd e2d | dgd B2A | GBd e2d | eaa aga |
+bag agf | ged B2A | BAG EGD |1 EGG G2D :|2 EGG G3 ||

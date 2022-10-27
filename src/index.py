@@ -3,7 +3,7 @@ from arpa import Arpa
 
 m = Musiikki()
 
-n = 3 # yksittäisen ennustettavan nuottijonon pituus
+n = 3 # yksittäisen ennustettavan nuottijonon pituus (ennustetaan n-1 edeltävän nuotin perusteella)
 a = Arpa(n)
 
 def hae_musiikki():
@@ -19,7 +19,6 @@ def hae_musiikki():
     # Tuodaan musiikki tekstitiedostosta.
     with open("musiikki_kipale.txt", "r") as musiikki_kipale:
         sisalto = musiikki_kipale.readlines() #tuodaan abc-notaatio riveittäin listana
-        print(f"sisalto 1: {sisalto}")
 
     # Luodaan lista, jossa pelkät nuotit (muu notaatio poistettu).
     for rivinumero in range(len(sisalto)):
@@ -27,7 +26,7 @@ def hae_musiikki():
             rivinumero_jalkeen = rivinumero + 1
         if rivinumero >= rivinumero_jalkeen:
             sisalto2.append(sisalto[rivinumero])
-   
+
     # Luodaan lista, jossa turhat merkit poistettu.
     for rivinumero2 in range(len(sisalto2)):
         rivi = sisalto2[rivinumero2]
@@ -39,7 +38,6 @@ def hae_musiikki():
         rivi = rivi.replace("4", "") #Limitation
         rivi = rivi.replace("\n", "")
         sisalto3.append(rivi)
-        print(f"sisalto3: {sisalto3}")
 
     # Luodaan lista, jolla eri rivien nuottimerkit perätysten.
     sisalto4 = ''.join(sisalto3)
@@ -79,7 +77,12 @@ def hae_musiikki():
                 sisalto5.append(nuottijono[1])
     return sisalto5
 
-def kirjoita_uusi_musiikki_tiedostoon(uusi_musiikki):
+def kirjoita_uusi_musiikki_tiedostoon(uusi_musiikki: str):
+    """Kirjoittaa uuden luodun musiikkikappaleen tekstitiedostoon abc-muotoon.
+
+    Args:
+        uusi_musiikki: Luodun musiikkikappaleen nuotit kirjaimina (string).
+    """
     tekstiosuus = ""
     with open("musiikki_kipale.txt", "r") as musiikki_kipale:
         sisalto = musiikki_kipale.readlines() #tuodaan abc-notaatio riveittäin listana
@@ -87,13 +90,14 @@ def kirjoita_uusi_musiikki_tiedostoon(uusi_musiikki):
             tekstiosuus += sisalto[rivinumero]
             if sisalto[rivinumero][0] == "K":
                 tekstiosuus += uusi_musiikki
-                print(f"tekstiosuus: {tekstiosuus}")
                 break
 
     with open('uusi_musiikki.txt', 'w') as uusi_musa:
         uusi_musa.write(tekstiosuus) #(uusi_musiikki)
 
 def main():
+    """Suorittaa ohjelman.
+    """
     pituus = 100 # luotavan musiikkikappaleen pituus eli nuottien määrä
     abc_nuotit = hae_musiikki()
     luotu_musiikkikappale_lukuina = a.luo_uutta(abc_nuotit, pituus)
@@ -104,7 +108,6 @@ def main():
         uusi_nuottijono = ""
         for nuotti in luotu_musiikkikappale_abc:
             uusi_nuottijono += nuotti + " "
-        print(f"ohjelman tuottama uusi musiikkikipale: {uusi_nuottijono}; pituus: {len(luotu_musiikkikappale_abc)}/{pituus}")
 
     kirjoita_uusi_musiikki_tiedostoon(uusi_nuottijono)
 

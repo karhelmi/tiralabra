@@ -2,11 +2,11 @@ class TrieSolmu:
     """Solmu trie-tietorakenteessa.
     """
 
-    def __init__(self, nuotti):
+    def __init__(self, nuotti: int):
         """Liittää solmuun lähtötiedot.
 
         Args:
-            nuotti (int): kyseisen solmun nuotti lukuna.
+            nuotti: kyseisen solmun nuotti lukuna.
         """
         self.nuotti = nuotti
         self.nuottijonon_frekvenssi = 0
@@ -19,6 +19,3 @@ class TrieSolmu:
             int: nuottijonon frekvenssi
         """
         return self.nuottijonon_frekvenssi
-
-    #def palauta_lapsisolmut(self):
-    #    return self.lapsisolmut

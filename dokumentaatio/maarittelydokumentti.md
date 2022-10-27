@@ -16,15 +16,23 @@ Ohjelmassa käytetty algoritmi perustuu Markovin ketjuun. Ohjelmassa voi määri
 kuinka monen nuotin perusteella uutta musiikkia luodaan. Uusi musiikkikappale luodaan 
 Markovin ketjun ja mainitun muuttujan perusteella eli alkuperäisen kappaleen n-pituisten nuottijonoihin
 perustuen luodaan uutta musiikkia n-pituinen nuottijono kerrallaan (arpomalla). Tässä
-käytetään hyväksi trie-tietorakennetta. Trie:n juurisolmusta lähtee n-pituiset nuottijonot
+käytetään hyväksi trie-tietorakennetta. Trien juurisolmusta lähtee n-pituiset nuottijonot
 lapsisolmujen suuntaan. Jokainen solmu pitää kirjaa nuotista, nuottijonon frekvenssistä sekä solmun
 lapsisolmuista.
 
+Valitsin trien, koska siihen pystyy tehokkaasti tallentamaan nuottijonoja. Markovin ketjuun
+perustuva algoritmi taasen sopii uuden musiikin luomiseen, koska siinä otetaan huomioon vain edellinen
+nuottiosajono, johon voi todennäköisyyksiin perustuen aina arpoa seuraavan jäsenen. Tämä takaa,
+että uusi musiikki on (lähes) aina uutta.
+
+## Syötteet
+
+Ohjelma saa syötteenä abc-muotoisena olevan musiikkikappaleen. Katso tästä tarkemmin
+[käyttöohjeista](https://github.com/karhelmi/tiralabra/blob/master/dokumentaatio/kayttoohje.md).
+
 ## Aika- ja tilavaativuus
 
-Algoritmi, joka lisää nuottijonot trie:hen määrittää aikavaativuuden. Aikavaativuus on
-n-pituisten nuottijonojen määrä kerrottuna yhden nuottijonon nuottien määrällä. Aikavaativuus on
-täten noin O('nuottien_lukumäärä'*n). Jos 'nuottien_lukumäärä = m, niin aikavaativuus on O(mn).
+Tämä on käsitelty [toteutusdokumentissa](https://github.com/karhelmi/tiralabra/blob/master/dokumentaatio/toteutusdokumentti.md)
 
 ## Lähteet
 
@@ -32,6 +40,8 @@ täten noin O('nuottien_lukumäärä'*n). Jos 'nuottien_lukumäärä = m, niin a
 * [Sivusto abc-notaation kuunteluun](https://colinhume.com/Music.aspx)
 * [Perustietoa abc-notaatiosta](https://thecelticroom.org/abc-music-notation/abc-notation-read-and-write.html)
 * [Musiikkia abc-notaationa](https://abcnotation.com/)
+* [Markovin ketju](https://en.wikipedia.org/wiki/Markov_chain)
+* [Trie-tietorakenne](https://en.wikipedia.org/wiki/Trie)
 * [Trien rakentaminen Pythonilla](https://albertauyeung.github.io/2020/06/15/python-trie.html/)
 
 ## Opinto-ohjelmani

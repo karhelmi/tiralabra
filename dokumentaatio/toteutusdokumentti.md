@@ -3,18 +3,23 @@
 ## Ohjelman yleisrakenne
 
 Ohjelmassa on neljä luokkaa:
-* musiikki
 * trie
 * trie-solmu
+* musiikki
 * arpa
 
 Alla olevassa kuvassa on esitetty ohjelman rakenne luokkakaaviona mukaan lukien luokkien metodit.
 
 ![](./kuvat/rakennekaavio.jpg)
 
-## Aika- ja tilavaativuudet
+## Aika- ja tilavaativuus
 
-Tämä kohta on [Määrittelydokumentissa](https://github.com/karhelmi/tiralabra/blob/master/dokumentaatio/maarittelydokumentti.md). Ole hyvä ja katso sieltä.
+Algoritmi, joka lisää nuottijonot triehen määrittää aikavaativuuden. Aikavaativuus on n-pituisten
+nuottijonojen määrä kerrottuna yhden nuottijonon nuottien määrällä. Aikavaativuus on täten noin
+O('nuottien_lukumäärä'*n). Jos 'nuottien_lukumäärä'=m, niin aikavaativuus on O(mn).
+atio/maarittelydokumentti.md). Ole hyvä ja katso sieltä.
+
+Tilavaativuutta en ole arvioinut.
 
 ## Suorituskyky- ja O-analyysivertailu
 
@@ -24,10 +29,11 @@ Tätä ei ole tässä työssä arvioitu.
 
 Ohjelmaa voi parantaa ainakin seuraavasti:
 
-* Abc-musiikin tuonti ja vienti ohjelmasta voisi tapahtua suoraan abc-notaatiolla. Jos musiikin
-voisi automaattisesti soittaa internetistä löytyvällä soittimella, niin se lisäisi käyttömukavuutta.
-* Käyttöliittymää voisi parantaa. Nyt tiedosto täytyy tuoda ohjelman kansioon ja mahdollisesti
-muuttaa haettavan tiedoston nimeä koodissa.
+* Jos ohjelma osaisi soittaa musiikin automaattisesti internetistä löytyvällä soittimella, 
+niin se lisäisi käyttömukavuutta.
+* Käyttöliittymää voisi parantaa. Nyt abc-musiikki pitää kopioida ohjelman tiedostoon ja uusi
+musiikki täytyy kopioida ohjelman tiedosta. Myös uuden kappaleen pituuden ja nuottiosajonon pituuden
+voisi määrittää helpommin kuin suoraan koodiin.
 * Testit voisivat olla kattavammat.
 * Voisi tutkia, onko aikavaativuutta mahdollisuus parantaa.
 

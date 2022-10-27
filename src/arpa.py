@@ -6,18 +6,18 @@ t = Trie()
 m = Musiikki()
 
 class Arpa:
-    """Luokka arvonnalle.
+    """Luokka uuden luotavan musiikin nuottien arvonnalle.
     """
 
     def __init__(self, n):
         self.n = n #nuottiosajonon pituus
 
-    def luo_uutta(self, abc_nuotit, pituus):
+    def luo_uutta(self, abc_nuotit: list, pituus: int):
         """Suorittaa tarvittavat metodit, jotta ohjelma luo uutta musiikkia.
 
         Args:
-            abc_nuotit (list): Tuotu kappale listana nuottikirjaimia.
-            n (int): Nuottijonon pituus, jonka perusteella uutta musiikkia luodaan.
+            abc_nuotit: Tuotu kappale listana nuottikirjaimia.
+            pituus: Uuden luotavan musiikkikappaleen pituus nuotteina.
         """
         nuottijonojen_lista = m.muuta_nuotit_n_pituisiksi_lukujonoiksi(abc_nuotit, self.n)
         t.lisaa_n_nuottijonot_triehen(nuottijonojen_lista)
@@ -39,6 +39,11 @@ class Arpa:
 
     def arvo_solmut(self, pituus):
         """Arpoo seuraavat solmut ja valmistaa uuden musiikkikappaleen.
+
+        Args:
+            pituus: Uuden luotavan musiikkikappaleen pituus nuotteina.
+
+        Returns: Luodun musiikkikappaleen (lukulistana).
         """
         eka_solmu = self.arvo_eka_solmu()
         nuottijono = []
@@ -59,5 +64,4 @@ class Arpa:
 
             musiikkikappale.append(seuraava_solmu)
 
-        print(f"lopullinen kipale: {musiikkikappale}")
         return musiikkikappale

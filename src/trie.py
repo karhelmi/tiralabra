@@ -11,7 +11,7 @@ class Trie:
         """Lisää n-pituisen nuottijonon trie-rakenteeseen.
 
         Args:
-            n_nuottijonojen_lista (list): Lista, jossa kaikki
+            n_nuottijonojen_lista: Lista, jossa kaikki
             musiikkikappaleen n-pituiset nuottijonot.
         """
         for nuottijono in n_nuottijonojen_lista:
@@ -31,10 +31,11 @@ class Trie:
         """Metodi etsii annetun nuottijonon viimeisen nuotin lapsisolmut ja palauttaa ne.
 
         Args:
-            nuottijono (list): nuottijonon n - 1 edellistä nuottia
+            nuottijono: Annetun nuottijonon n - 1 edellistä nuottia
 
         Returns:
-            list: Palauttaa listan mahdollisista seuraavista nuoteista/solmuista.
+            list: Palauttaa listan mahdollisista seuraavista nuoteista/solmuista
+            ja sellaisten nuottijonojen frekvenssin alkuperäisessä musiikkikappaleessa.
         """
         solmu = self.juuri
         seuraajat = []

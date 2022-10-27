@@ -1,8 +1,6 @@
-X:511
-T:Set 11 - Hornpipes
-S:thecelticroom.org
-M:4/4
-L:1/8
-R:hornpipe
-K:Dmaj
-D A F A D A F D D d B c d B c d e d B c d B c d e d B c d e d B d B c d B c d B c d B A A B A F D D d B A A B A d d c d B A F A d f e d B A d d c d B c d e d B d A A B A d d c d e d B d B d B A F D E 
+X:513
+T:Set 13 - Jigs
+M:6/8
+R:Jig
+K:Gmaj
+g e d e d B A B A G A B A G B d e a a g a g f g e d d g d B A B A B A B A B A B A B A G A E G D G B d e a a g a g f g e d B A B A B A G E G A E G A B A B A G A E G G D G B d e a a a g a b a g a g f g 

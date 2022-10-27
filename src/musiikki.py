@@ -50,8 +50,8 @@ class Musiikki:
             osajonoihin.
 
         Args:
-            abc_nuotit (list): Abc-nuottikirjaimet listana.
-            n (int): Haluttu osajonon pituus.
+            abc_nuotit: Abc-nuottikirjaimet listana.
+            n: Haluttu osajonon pituus.
 
         Returns:
             list: Palauttaa alkuperäisestä kappaleesta muodostetun
@@ -81,7 +81,7 @@ class Musiikki:
         """Tämä metodi muuttaa luvut takaisin nuoteiksi (kirjaimiksi).
 
         Args:
-            uusi_musiikki list: Algoritmin rakentama uusi musiikki listana.
+            uusi_musiikki: Algoritmin rakentama uusi musiikki listana.
 
         Returns:
             list: Palauttaa listan, jossa luvut on muunnettu nuottikirjaimiksi.
